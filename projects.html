@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanner Armstrong</title>
+
+  <link href="cdn.jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #F5F1ED;
+    }
+
+    .top-menu {
+      background-color: #70798C;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 60px;
+      align-items: center;
+    }
+
+    .top-menu li {
+      margin-right: 20px;
+    }
+
+    .top-menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .top-menu a:hover {
+      background-color: #252323;
+    }
+
+    h1 {
+
+        color: #252323;
+    }
+
+    .sidebar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #DAD2BC;
+    padding-top: 20px;
+    }
+
+    .sidebar button {
+        display: block;
+        width: 100%;
+        padding: 5px 0px;
+        background: none;
+        border: none;
+        color: #494848;
+        text-align: left;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .sidebar a:hover {
+    background: #636363;
+    }
+
+    /* main content */
+    .content {
+        margin-left: 220px;
+        padding: 20px;
+    }
+
+    .section {
+        display: none;
+    }
+    .section.active {
+        display: block;
+}
+  </style>
+
+</head>
+
+<script>
+function showSection(id) {
+
+  // hide all sections
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.classList.remove('active');
+  });
+
+  // remove active button
+  document.querySelectorAll('.sidebar button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  // show selected section
+  document.getElementById(id).classList.add('active');
+
+  // activate clicked button
+  event.target.classList.add('active');
+}
+</script>
+
+<body>
+
+
+
+  <header style="background-color: #A99985; color: #fff; padding: 16px 20px;">
+    <h1 style="margin: 0 0 8px 0; font-size: 30px; text-align: center;">Tanner Armstrong</h1>
+  </header>
+
+  
+
+  <nav class="top-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><b>Arduino Projects</b></li>
+            
+            <ul>
+                <li><button onclick="showSection('led_count')" class="active">LED Count</button></li>
+                <li><button onclick="showSection('ssd_with_8bsr')">Seven Segment Display with 8bit Shift Register</button></li>
+                <li><button onclick="showSection('piezo_piano')">Piezo Piano</button></li>
+            </ul>
+
+            <br>
+
+            <li><b>Coding Projects</b></li>
+        </ul>
+    
+    </div>
+
+   
+<!--
+  <main style="padding: 20px; display: flex; justify-content: center;">
+
+    <p style="text-align: center;">This page is a lot of projects I've worked on personally and some from schoolwork<br>
+    </p>
+
+  </main>-->
+
+  <div class="content">
+
+    <div id="led_count" class="section active">
+        <h2 style="text-align: center;">LED Count</h2>
+        <h4 style="text-align: center; padding-top: 0px;"><a href="https://github.com/tannerJDA/arduino/blob/main/4led_count/4led_count.mp4">github link</a></h6>
+        
+            <video controls width="600" style="display:flex; justify-self: center;">
+            <source src="videos/4led_count.mp4" type="video/mp4">
+            <!-- Fallback text for older browsers-->
+             Your browser does not support the video tag.
+        </video>
+
+        <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+            This small project is simply 4 LEDs setup to count up in binary.
+
+        </p>
+
+
+    </div>
+
+    <div id="ssd_with_8bsr" class="section">
+        <h2 style="text-align: center; padding-bottom: 0px;">Seven Segment Display with 8 Bit Shift Register</h2>
+        <h4 style="text-align: center; padding-top: 0px;"><a href="https://github.com/tannerJDA/arduino/tree/main/seven_seg_display_rot_encoder">github link</a></h6>
+
+        <video controls width="600" style="display:flex; justify-self: center;">
+            <source src="videos/rotary_encoder_with_button.mp4" type="video/mp4">
+            <!-- Fallback text for older browsers-->
+             Your browser does not support the video tag.
+        </video>
+
+        <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+            This small project is simply a seven segment display that displays an integer between 0 and 255. <br>
+            The value is adjusted with the rotary encoder (knob) on the right. Pressing the knob resets the value to 0, and if the value is already 0 it gets set to 255 <br>
+            <br>
+
+            It functions by sending 8 bits serially to a shift register. The first four bits are then sent to a 7447 BCD decoder to determine what integer to show, and the second four bits are sent to the pins of the SSD itself to determine which of the digits to show. <br>
+            <br>
+
+            The seven segment display itself functions by telling it one number, and one of the four available digits to display that number on, and then rapidly switching between digits to give the illusion of displaying numbers larger than 9.
+        </p>
+    </div>
+
+    <div id="piezo_piano" class="section">
+        <h2 style="text-align: center;">Piezo Piano</h2>
+        <h4 style="text-align: center; padding-top: 0px;"><a href="">github link</a></h6>
+
+        <video controls width="600" style="display:flex; justify-self: center;">
+            <source src="videos/piezopiano.mp4" type="video/mp4">
+            <!-- Fallback text for older browsers-->
+             Your browser does not support the video tag.
+        </video>
+
+        <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+            This project is 3 buttons used as the "keys" for the piano, a piezo buzzer to generate the sound, and a potentiometer that controls the octaves played. <br>
+            I would have liked to have had 12 buttons to fully emulate one section of a piano, but unfortunately I only had 3 buttons in my box of parts available to me at the time. <br>
+            To make up for the lack of notes to play, I added the potentiometer which controls the octave of the notes being played. <br>
+            <br>
+            The notes playable are, in order: C, D, and E. The specific frequencies can be found in the arduino .ino file. <br>
+            The potentiometer allows for three ranges of octaves that the user can change between.
+        </p>
+    </div>
+  </div>
+
+
+</body>
+</html>
