@@ -89,7 +89,34 @@
     }
     .section.active {
         display: block;
-}
+    }
+
+    .image-cont {
+      text-align: center;
+    }
+
+    .image-label {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .scroll-container{
+      margin-top: 40px;
+      width: 70%;
+      
+      overflow-x: auto;
+      overflow-y: auto;
+      white-space: nowrap;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-left: 15%;
+    }
+
+    .scroll-itm{
+      margin-top: 30px;
+      height: 700px;
+    }
+    
   </style>
 
 </head>
@@ -231,10 +258,43 @@ function showSection(id) {
         <h2 style="text-align: center;">Relation Database System Normalizer</h2>
         <h4 style="text-align: center; padding-top: 0px;"><a href="https://github.com/tannerJDA/RDBMS_Normalizer">github link</a></h6>
           <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
-            This project was my final submission for my 5000 level database systems course from my last semester of college. The program functions by taking in a table as a .csv file, and will then 
-            determine which normal form that table already exists in. The user can then input which normal form, up to Boyce-Codd Normal Form, they would like to translate the table into.
+            This project was my final submission for my 5000 level database systems course from my last semester of college. The program functions by taking in a table as a .csv file and a list of it's functional
+            depedencies, and the primary key, and will then determine which normal form that table already exists in. The user can then input which normal form, up to Boyce-Codd Normal Form, they would like to translate the table into.
+            
+            <br><br>
 
-          </p>
+            In Figure 1, you can see the example table I used throughout testing the project.
+            
+            </p>
+            <div class="image-cont">
+              <div class="image-label"><b>Figure 1</b></div>
+              <img src="pictures/rdbms_extable.png">
+            </div>
+
+            <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+            To check what normal form the table already exists in, I would run the commmand:
+            <br>python rdbms.py --tablefile="exampleInputTable.csv" --key="StudentID, Course" --inputfile="functionaldependencies.txt" --check=True<br><br>
+            And the program would output telling me the table is currently in 1st Normal Form.
+            </p>
+
+            <div class="image-cont">
+              <div class="image-lable"><b>Figure 2</b></div>
+              <img src="pictures/rdbms_check_output.png" style="height: 550px; width: 800px;">
+            </div>
+
+            <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+              From here I can simply use the command: <br>python rdbms.py --tablefile="exampleInputTable.csv" --key="StudentID, Course" --inputfile="functionaldependencies.txt" --form=4 <br>
+              to normalize the relation up to the 4th Normal Form, or whatever form the user desires. After showing all the tables in their final normalized forms, the program will also generate the 
+              requisite SQL commands to generate all of the tables.
+            </p>
+
+            <div class="scroll-container" style="display: flex; align-items: center;">
+              <img src="pictures/rdbms_final1.png" class="scroll-itm">
+              <img src="pictures/rdbms_final2.png" class="scroll-itm">
+              <img src="pictures/rdbms_final3.png" class="scroll-itm">
+            </div>
+
+          
 
    
         </div>
