@@ -129,7 +129,8 @@ function showSection(id) {
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="work_exp.html">Work History</a></li>
     </ul>
   </nav>
 
@@ -147,6 +148,10 @@ function showSection(id) {
             <br>
 
             <li><b>Coding Projects</b></li>
+            
+            <ul>
+              <li><button onclick="showSection('RDBMS_Normalizer')">Database System Normalizer</button></li>
+            </ul>
         </ul>
     
     </div>
@@ -221,6 +226,19 @@ function showSection(id) {
             The potentiometer allows for three ranges of octaves that the user can change between.
         </p>
     </div>
+
+    <div id="RDBMS_Normalizer" class="section">
+        <h2 style="text-align: center;">Relation Database System Normalizer</h2>
+        <h4 style="text-align: center; padding-top: 0px;"><a href="https://github.com/tannerJDA/RDBMS_Normalizer">github link</a></h6>
+          <p style="display: flex; justify-content: center; width: 70%; padding-left: 15%;">
+            This project was my final submission for my 5000 level database systems course from my last semester of college. The program functions by taking in a table as a .csv file, and will then 
+            determine which normal form that table already exists in. The user can then input which normal form, up to Boyce-Codd Normal Form, they would like to translate the table into.
+
+          </p>
+
+   
+        </div>
+
   </div>
 
 
