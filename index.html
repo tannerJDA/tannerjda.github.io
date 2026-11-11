@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Personal portfolio featuring Python development, data analysis, and software projects.">
+
+    <title>Tanner Armstrong | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="css/style_cream.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">TJDA<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                ☀
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero container">
+
+            <div class="hero-content">
+
+                <p class="eyebrow"></p>
+
+                <h1>Hi, I'm <span>Tanner Armstrong.</span></h1>
+
+                <h2>Computer Science Graduate & Python Developer</h2>
+
+                <!--
+                <p class="hero-description">
+                    I develop software applications, explore mathematical
+                    concepts through programming, and create tools for
+                    data analysis and visualization.
+                </p>
+            -->
+
+                <p class="hero-description">
+                    I develop software and love getting the oppurtunity to find new and exciting
+                    solutions to problems. Whether it's data anyalsis in python, neural networks with tensorflow,
+                    hands on electronics with arduinos, or anything else that life presents - I'm passionate
+                    about problem solving and software engineering.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="projects.html" class="btn btn-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="assets/resume.pdf"
+                       class="btn btn-outline"
+                       download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/tannerJDA"
+                       target="_blank"
+                       rel="noopener noreferrer">GitHub</a>
+
+                    <a href="https://www.linkedin.com/in/tanner-jd-armstrong/"
+                       target="_blank"
+                       rel="noopener noreferrer">LinkedIn</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">INTRODUCTION</p>
+                    <h2>About Me</h2>
+                </div>
+
+                <p class="about-text">
+                    I hold a Bachelor's degree in Computer Science with
+                    a minor in Mathematics. My interests include Python
+                    development, data analysis, mathematical modeling,
+                    and building practical software applications.
+
+                    I enjoy solving technical problems and creating
+                    applications that make complex information easier
+                    to understand through visualization.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED PROJECTS -->
+        <section id="projects" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Featured Projects</h2>
+                    <p>
+                        A selection of applications and tools I've worked on.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- PROJECT 1 
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>🏈</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>NFL Player/Team Data Analysis Tool</h3>
+
+                            <p>
+                                Python application that downloads a plethora of up to date
+                                NFL statistics and presents them to the user. Both overall
+                                team and individual player statistics are present and broken
+                                down season by season or week by week.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>Tkinter</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projects.html#waveform">
+                                    Project Details →
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>📈</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Stock Sentiment Analyzer</h3>
+
+                            <p>
+                                Allows the user to input any stock ticker and receive back data
+                                regarding that company's sentiment in recent news, positive or negative,
+                                and compare that to their stock closing prices in that same time span
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>Tkinter</span>
+                                <span>Finance</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projects.html#waveform">
+                                    Project Details →
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>▥</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Relational Database System Normalizer</h3>
+
+                            <p>
+                                This is a tool that takes in a relational table as a .csv file,
+                                a list of its functional dependencies, and a primary key. With that,
+                                it will determine which normal form the table already exists in, and can
+                                then normalize that table to whatever form the user desires, up to
+                                Boyce-Codd normal form.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Pandas</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projects.html#nlp">
+                                    Project Details →
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="section-footer">
+                    <a href="projects.html" class="btn btn-outline">
+                        View All Projects →
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNICAL SKILLS -->
+        <section id="skills" class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">TECHNOLOGIES</p>
+                    <h2>Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-group">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Data & Visualization</h3>
+                        <div class="skill-list">
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Tkinter</span>
+                            <span>spaCy</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WORK EXPERIENCE -->
+        <section id="experience" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">PROFESSIONAL BACKGROUND</p>
+                    <h2>Work Experience</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Developer</h3>
+                                <p class="organization">United States Geological Survey</p>
+                            </div>
+
+                            <span class="timeline-date">
+                                2023 – 2024
+                            </span>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Worked on a small team of developers, participating in daily agile meetings and bi-weekly scrum planning sessions.
+                            </li>
+                            <li>
+                                Developed webpages to user specifications in order to visualize data in various ways using Django python
+                                and postgreSQL
+                            </li>
+                            <li>
+                                Converted a number of old legacy databases they had into modern postgreSQL tables.
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section id="education" class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">ACADEMIC BACKGROUND</p>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-card">
+
+                    <h3>Bachelor of Science in Computer Science</h3>
+
+                    <p class="organization">Missouri University of Science and Technology</p>
+
+                    <p>Minor in Mathematics</p>
+
+                    <h4>Relevant Coursework</h4>
+
+                    <div class="skill-list">
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>Linear Algebra</span>
+                        <span>Intro to Deep Learning</span>
+                        <span>Evolutionary Computing</span>
+                        <span>Differential Equations</span>
+                        <span>Database Systems</span>
+                        <span>Microcontrollers and Embedded Systems</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+
+            <div class="container contact-section">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>Let's Connect</h2>
+
+                <p>
+                    Interested in discussing opportunities, projects,
+                    or software development? Feel free to reach out.
+                </p>
+
+                <a href="mailto:you@example.com"
+                   class="btn btn-primary">
+                    Email Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>© <span id="year"></span> Tanner Armstrong</p>
+
+            <div class="footer-links">
+                <a href="https://github.com/tannerJDA">GitHub</a>
+                <a href="https://www.linkedin.com/in/tanner-jd-armstrong/">LinkedIn</a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
