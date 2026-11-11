@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Your Name</title><link rel="stylesheet" href="./css/style.css"><script src="./js/main.js" defer></script></head>
+<body>
+<header class="site-header"><nav class="navbar container"><a class="logo" href="./index.html">YN<span>.</span></a>
+<div class="nav-links"><a href="./index.html">Home</a><a class="active" href="./projects.html">Projects</a><a href="./index.html#skills">Skills</a><a href="./index.html#experience">Experience</a><a href="./index.html#education">Education</a><a href="./index.html#contact">Contact</a></div>
+<button class="theme-toggle" type="button" aria-label="Toggle theme">☀</button></nav></header>
+<main><section class="page-hero container"><p class="eyebrow">MY WORK</p><h1>Projects<span>.</span></h1><p>Software, mathematical tools, and data analysis applications.</p></section>
+<section class="section projects-section"><div class="container">
+<div class="project-filters" role="group" aria-label="Filter projects">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+<button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
+<button class="filter-btn" data-filter="machine-learning" aria-pressed="false">Machine Learning</button>
+<button class="filter-btn" data-filter="web" aria-pressed="false">Web</button></div>
+<p class="project-count" aria-live="polite"></p>
+<div class="project-grid">
+<article class="project-card" id="waveform" data-category="python"><div class="project-image"><span>∿</span></div><div class="project-content"><h2>Waveform Visualizer</h2><p>Interactive mathematical waveform visualization.</p><h3>Key Features</h3><ul class="feature-list"><li>Adjust frequency and amplitude</li><li>Plot sine and cosine waves</li></ul><div class="project-tags"><span>Python</span><span>Matplotlib</span></div><div class="project-links"><a href="https://github.com/">Source Code ↗</a></div></div></article>
+<article class="project-card" id="nlp" data-category="python machine-learning"><div class="project-image"><span>NLP</span></div><div class="project-content"><h2>NLP Information Extraction</h2><p>Custom-trained named entity recognition.</p><h3>Key Features</h3><ul class="feature-list"><li>Text preprocessing</li><li>spaCy model training</li></ul><div class="project-tags"><span>Python</span><span>spaCy</span></div><div class="project-links"><a href="https://github.com/">Source Code ↗</a></div></div></article>
+<article class="project-card" id="portfolio" data-category="web"><div class="project-image"><span>&lt;/&gt;</span></div><div class="project-content"><h2>Portfolio Website</h2><p>A responsive portfolio built with HTML, CSS, and JavaScript.</p><h3>Key Features</h3><ul class="feature-list"><li>Project filtering</li><li>Dark/light mode</li></ul><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/">Source Code ↗</a></div></div></article>
+</div></div></section></main>
+<footer class="site-footer"><div class="container footer-content"><p>© <span id="year"></span> Your Name</p><div class="footer-links"><a href="./index.html">Home</a><a href="./projects.html">Projects</a></div></div></footer>
+</body></html>
