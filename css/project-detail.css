@@ -1,0 +1,258 @@
+
+/* ==================================
+   INDIVIDUAL PROJECT PAGES
+================================== */
+
+.project-detail {
+    max-width: 950px;
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+
+/* BACK NAVIGATION */
+
+.back-link {
+    display: inline-block;
+    color: var(--accent-light);
+    font-size: 0.9rem;
+    margin-bottom: 45px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* PROJECT HEADER */
+
+.detail-header {
+    margin-bottom: 55px;
+}
+
+.detail-header h1 {
+    font-size: clamp(2.3rem, 5vw, 3.6rem);
+    margin: 12px 0 20px;
+}
+
+.detail-summary {
+    max-width: 750px;
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.detail-actions {
+    margin-top: 30px;
+}
+
+
+/* CONTENT SECTIONS */
+
+.detail-section {
+    margin-bottom: 65px;
+}
+
+.detail-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.detail-section h2::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin-top: 12px;
+    background: var(--accent);
+}
+
+.detail-section p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+
+/* MAIN SCREENSHOT */
+
+.hero-screenshot,
+.screenshot-grid figure {
+    margin: 0;
+}
+
+.hero-screenshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow, 0 8px 30px rgba(0,0,0,.15));
+}
+
+figcaption {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+/* FEATURE LIST */
+
+.detail-features {
+    padding-left: 22px;
+    color: var(--muted);
+}
+
+.detail-features li {
+    margin-bottom: 13px;
+    line-height: 1.7;
+}
+
+.detail-features li::marker {
+    color: var(--accent);
+}
+
+
+/* SCREENSHOT GALLERY */
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.screenshot-grid img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+
+/* SOURCE CODE SECTION */
+/* ==================================
+   SOURCE CODE LINK
+================================== */
+
+.source-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: 60px;
+    padding: 25px 0;
+
+    border-top: 1px solid var(--border);
+
+    background: transparent;
+    text-align: left;
+}
+
+.source-info h3 {
+    font-size: 1.05rem;
+    margin: 0 0 5px;
+}
+
+.source-info p {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.source-link {
+    display: inline-block;
+    flex-shrink: 0;
+
+    padding: 10px 17px;
+
+    color: var(--accent-light);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition:
+        border-color 0.2s,
+        color 0.2s;
+}
+
+.source-link:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+@media (max-width: 600px) {
+    .source-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .project-detail {
+        padding-top: 35px;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-grid img {
+        height: auto;
+    }
+
+    .source-section {
+        padding: 25px;
+    }
+}
+
+
+/* Project documentation */
+
+.project-documentation {
+    padding: 28px 0;
+    margin: 50px 0;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.documentation-info h3 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+}
+
+.documentation-info p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.documentation-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.documentation-links .btn {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+}

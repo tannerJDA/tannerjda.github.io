@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Relational Database Normalizer | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style_cream.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="../index.html" class="logo">
+                TJDA<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../projects.html"
+                   class="active">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                ☀
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main class="project-detail container">
+
+        <!-- BACK LINK -->
+        <a href="../projects.html" class="back-link">
+            ← Back to Projects
+        </a>
+
+
+        <!-- PROJECT HEADER -->
+        <section class="detail-header">
+
+            <p class="eyebrow">
+                PYTHON APPLICATION
+            </p>
+
+            <h1>Relational Database Normalizer</h1>
+
+            <p class="detail-summary">
+                A python application that allows a user to analyze the current normal form of a given
+                table and then translate it into other normal forms.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>SQL</span>
+            </div>
+
+            <div class="detail-actions">
+                <a href="https://github.com/tannerJDA/RDBMS_Normalizer"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Source Code ↗
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- MAIN SCREENSHOT -->
+        <section class="detail-section">
+
+            <figure class="hero-screenshot">
+
+                <img
+                    src="../assets/images/rdbms/hero.png"
+                    alt="Main waveform visualizer interface"
+                >
+
+                <figcaption>
+                    Main application interface
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="detail-section">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                This is a tool that takes in a relational table as a .csv file,
+                a list of its functional dependencies, and a primary key. With that,
+                it will determine which normal form the table already exists in, and can
+                then normalize that table to whatever form the user desires, up to
+                Boyce-Codd normal form.
+            </p>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="detail-section">
+
+            <h2>Key Features</h2>
+
+            <ul class="detail-features">
+                <li>
+                    Sleek, command-line interface that handles all inputs
+                </li>
+                <li>
+                    Translation into first, second, third, fourth, or Boyce-Codd Normal Form
+                </li>
+                <li>
+                    Formatted SQL code output ready to generate the new table
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- SCREENSHOTS 
+        <section class="detail-section">
+
+            <h2>Application Screenshots</h2>
+
+            <p>
+                The following screenshots demonstrate an example table as its inputted 
+                and after the final translation
+            </p>
+
+            <div class="screenshot-grid">
+
+                <figure>
+                    <img
+                        src="../assets/images/waveform/sine.png"
+                        alt="Sine wave with adjustable parameters"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Initial table
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="../assets/images/rdbms/sqlfinal.png"
+                        alt="Sawtooth waveform visualization"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Final Output
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+        -->
+
+        <section class="project-documentation">
+
+            <div class="documentation-info">
+                <h3>Technical Project Report</h3>
+
+                <p>
+                    Read the full project report for a detailed
+                    explanation of the normalization process,
+                    implementation, and additional screenshots.
+                </p>
+            </div>
+
+            <div class="documentation-links">
+
+                <a href="../assets/Database_normalization_report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary">
+                    View Report ↗
+                </a>
+
+                <a href="../assets/Database_normalization_report.pdf"
+                download
+                class="btn btn-outline">
+                    Download PDF ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNICAL IMPLEMENTATION 
+        <section class="detail-section">
+
+            <h2>Technical Implementation</h2>
+
+            <p>
+                Waveform calculations are handled using NumPy
+                arrays and mathematical functions. The resulting
+                values are plotted using Matplotlib, which is
+                embedded directly into the Tkinter interface.
+            </p>
+
+            <p>
+                The application separates the mathematical
+                calculations from GUI event handling, making
+                it easier to introduce new waveform types
+                or additional visualization features.
+            </p>
+
+        </section>
+        -->
+
+
+        <!-- SOURCE CODE -->
+        <section class="source-section">
+
+            <div class="source-info">
+                <h3>Interested in the code?</h3>
+                <p>Explore the implementation on GitHub.</p>
+            </div>
+
+            <a href="https://github.com/tannerJDA/RDBMS_Normalizer"
+            class="source-link"
+            target="_blank"
+            rel="noopener noreferrer">
+                Source Code ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Tanner Armstrong</p>
+            <a href="../projects.html">All Projects</a>
+        </div>
+    </footer>
+
+</body>
+</html>
