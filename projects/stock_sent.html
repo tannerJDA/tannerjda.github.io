@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Stock Sentiment Analyzer | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style_cream.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="../index.html" class="logo">
+                TJDA<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../projects.html"
+                   class="active">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                ☀
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main class="project-detail container">
+
+        <!-- BACK LINK -->
+        <a href="../projects.html" class="back-link">
+            ← Back to Projects
+        </a>
+
+
+        <!-- PROJECT HEADER -->
+        <section class="detail-header">
+
+            <p class="eyebrow">
+                PYTHON APPLICATION
+            </p>
+
+            <h1>Stock Sentiment Analyzer</h1>
+
+            <p class="detail-summary">
+                Application which allows a user to look at recent news regarding a
+                company and it's respective sector.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Numpy</span>
+                <span>Matplotlib</span>
+                <span>Tkinter</span>
+            </div>
+
+            <div class="detail-actions">
+                <a href="https://github.com/tannerJDA/stock-sentiment-analyzer"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Source Code ↗
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- MAIN SCREENSHOT -->
+        <section class="detail-section">
+
+            <figure class="hero-screenshot">
+
+                <img
+                    src="../assets/images/stock_sent/hero.png"
+                    alt="Main sentiment analyzer interface"
+                >
+
+                <figcaption>
+                    Main application interface
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="detail-section">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                This is a tool that takes in a relational table as a .csv file,
+                a list of its functional dependencies, and a primary key. With that,
+                it will determine which normal form the table already exists in, and can
+                then normalize that table to whatever form the user desires, up to
+                Boyce-Codd normal form.
+            </p>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="detail-section">
+
+            <h2>Key Features</h2>
+
+            <ul class="detail-features">
+                <li>
+                    Modern, readable graphical interface
+                </li>
+                <li>
+                    Ability to search across a 30, 60, or 90 day time span
+                </li>
+                <li>
+                    Detailed list of all relevant headlines
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- SCREENSHOTS -->
+        <section class="detail-section">
+
+            <!--
+            <h2>Application Screenshots</h2>
+
+            <p>
+                
+            </p>
+            -->
+
+            <div class="screenshot-grid">
+
+                <figure>
+                    <img
+                        src="../assets/images/stock_sent/landing_page.png"
+                        alt="Stock sentiment analyzer landing page"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Landing page
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+        
+
+        <!-- TECHNICAL IMPLEMENTATION -->
+        <section class="detail-section">
+
+            <h2>Technical Implementation</h2>
+
+            <p>
+                The application GUI is built using the tkinter python library, with the chart objects
+                using Matplotlib. The company news feed articles come from the finnhub api, with the 
+                sector wide news being gathered from the google news RSS feed.
+            </p>
+
+            <p>
+                The sentiment detection is done using the Valence Aware Dictionary and sEntiment Reasoner
+                (VADER) library.
+            </p>
+
+        </section>
+        
+
+
+        <!-- SOURCE CODE -->
+        <section class="source-section">
+
+            <div class="source-info">
+                <h3>Interested in the code?</h3>
+                <p>Explore the implementation on GitHub.</p>
+            </div>
+
+            <a href="https://github.com/tannerJDA/RDBMS_Normalizer"
+            class="source-link"
+            target="_blank"
+            rel="noopener noreferrer">
+                Source Code ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Tanner Armstrong</p>
+            <a href="../projects.html">All Projects</a>
+        </div>
+    </footer>
+
+</body>
+</html>
